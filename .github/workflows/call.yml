@@ -15,5 +15,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Result> ${MESSAGE}"
-      env:
-        MESSAGE: ${{ needs.call.outputs.message }}
+        env:
+          MESSAGE: ${{ needs.call.outputs.message }}
