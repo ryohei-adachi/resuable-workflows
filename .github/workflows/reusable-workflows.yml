@@ -29,7 +29,7 @@ jobs:
           gh pr comment "${PR_NUMBER}" --body "${body}"
           echo "body=${body}" >> "${GITHUB_OUTPUT}"
         env:
-          PR_NUMBER: ${{ inputs.pr_number }}
+          PR_NUMBER: ${{ inputs.pr-number }}
           GITHUB_TOKEN: ${{ secrets.token }}
     outputs:
       pr-comment: ${{ steps.pr-comment.outputs.body }}
