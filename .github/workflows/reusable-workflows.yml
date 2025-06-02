@@ -18,7 +18,7 @@ on:
 jobs:
   comment:
     runs-on: ubuntu-latest
-    premissions:
+    permissions:
       contents: read
       pull-requests: write
     steps:
