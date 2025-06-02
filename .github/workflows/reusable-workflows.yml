@@ -1,6 +1,6 @@
 name: Reusable Workflows
 on:
-  workflow_call:
+  workflow_call:  #Reusable Workflowを起動するイベント
     inputs:
       pr-number:
         type: string
