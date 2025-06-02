@@ -19,7 +19,7 @@ jobs:
   comment:
     runs-on: ubuntu-latest
     premissions:
-      contents: red
+      contents: read
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
